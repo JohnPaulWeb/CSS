@@ -1,3 +1,3 @@
 # Activtiy for School Purposes 
 
-# CSS | Blend Monds and Filters
+# CSS | Blend Modes and Filters
