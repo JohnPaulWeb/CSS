@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayanokoji Kiyotaka - Blockchain Developer & Full Stack Engineer</title>
+    <meta name="description" content="Portfolio of Aakash Singh Rajput, a Blockchain Developer and Full Stack Engineer specializing in Web3 technologies.">
+    <link rel="stylesheet" href="Finals.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-container">
+            <div class="loading-bar-container">
+                <div class="loading-bar-bg"></div>
+                <div class="loading-bar" id="loading-bar"></div>
+                <div class="loading-bar-glow"></div>
+            </div>
+            <div class="loading-percentage" id="loading-percentage">0%</div>
+            <div class="loading-text">Loading...</div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#home" class="logo">Ayanokoji<span class="text-accent">.</span></a>
+            
+            <!-- Desktop Navigation -->
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#work" class="nav-link">Work</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="https://calendly.com/aakash4dev/quickchat" target="_blank" rel="noopener noreferrer" class="nav-icon" aria-label="Schedule a meeting">
+                    <i class="fa-regular fa-calendar"></i>
+                </a>
+                <a href="https://github.com/aakash4dev" target="_blank" rel="noopener noreferrer" class="nav-icon" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/aakash4dev" target="_blank" rel="noopener noreferrer" class="nav-icon" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+
+            <!-- Mobile Navigation Toggle -->
+            <div class="mobile-nav-icons">
+                <a href="https://calendly.com/aakash4dev/quickchat" target="_blank" rel="noopener noreferrer" class="nav-icon" aria-label="Schedule a meeting">
+                    <i class="fa-regular fa-calendar"></i>
+                </a>
+                <a href="https://github.com/aakash4dev" target="_blank" rel="noopener noreferrer" class="nav-icon" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/aakash4dev" target="_blank" rel="noopener noreferrer" class="nav-icon" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars" id="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="mobile-menu" id="mobile-menu">
+            <div class="container">
+                <a href="#home" class="mobile-nav-link">Home</a>
+                <a href="#about" class="mobile-nav-link">About</a>
+                <a href="#services" class="mobile-nav-link">Services</a>
+                <a href="#work" class="mobile-nav-link">Work</a>
+                <a href="#contact" class="mobile-nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Interactive Shapes Background -->
+    <div class="interactive-shapes" id="interactive-shapes"></div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="animated-boxes" id="animated-boxes"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hey! It's Kiyotaka Ayanokoji</h1>
+                <h2 class="hero-subtitle">🚀 Web Developer | Full-Stack Developer | Blockchain Explorer</h2>
+                <div class="hero-buttons">
+                    <a href="#work" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="gradient-text">Code, Coffee & Me</span>
+                <span class="emoji">☕💻</span>
+            </h2>
+            
+            <!-- Profile Section -->
+            <div class="profile-container">
+                <div class="profile-image">
+                    <img src="yas.jpg" alt="Ayanokoji">
+                </div>
+                <div class="profile-content">
+                    <div class="profile-text">
+                        <!-- Mobile description -->
+                        <p class="mobile-bio">
+                            Blockchain Sorcerer 🧙‍♂️ and Full Stack Dev 💻. Building secure, scalable solutions in the
+                            crypto-verse. From DeFi to Web3, turning complex tech into seamless experiences. ⛓⚡🔥
+                        </p>
+                        <!-- Desktop description -->
+                        <div class="desktop-bio">
+                            <p class="bio-intro">
+                                🚀 <strong>Hey, I'm Ayanokoji Kiyotaka</strong>
+                            </p>
+                            <p>
+                                A <strong>Blockchain Wizard 🧙‍♂️</strong> and <strong>Full Stack Alchemist 💻</strong>, turning
+                                <strong>lines of code</strong> into <strong>decentralized magic</strong>! Whether it's
+                                <strong>smart contracts</strong>, <strong>ZK proofs</strong>, or <strong>FHE sorcery</strong>, I
+                                love pushing Web3 to the next level.
+                            </p>
+                            <p>
+                                I spend my days <strong>hacking away in Solidity, Go, and Rust</strong>—and my nights wondering why
+                                gas fees still exist. 😅 When I'm not coding, I'm probably deep-diving into
+                                <strong>DeFi rabbit holes</strong>, contributing to <strong>open-source chaos</strong>, or
+                                evangelizing blockchain to anyone who'll listen (or can't escape).
+                            </p>
+                            <p>
+                                Let's <strong>connect, build, and break things</strong>—because the
+                                <strong>future is decentralized, and I refuse to be left behind!</strong> ⛓⚡🔥
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline Section -->
+            <div class="timeline-section">
+                <h3 class="subsection-title">
+                    <span class="gradient-text">The Road So Far</span>
+                    <span class="emoji">🛤️</span>
+                </h3>
+                <div class="timeline">
+                    <!-- Timeline Line -->
+                    <div class="timeline-line"></div>
+                    
+                    <!-- Timeline Items -->
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div class="company-logo">
+                                    <img src="images/company-a-logo.svg" alt="Company A" onerror="this.src='images/placeholder.svg'">
+                                </div>
+                                <div class="company-info">
+                                    <h3 class="role">Software Engineer</h3>
+                                    <h4 class="company">Company A</h4>
+                                    <div class="timeline-meta">
+                                        <span><i class="fa-regular fa-calendar"></i> 2020 - 2022</span>
+                                        <span><i class="fa-solid fa-location-dot"></i> New York, NY</span>
+                                        <span><i class="fa-solid fa-building"></i> Full-time</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills-container">
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">React</span>
+                                <span class="skill-tag">Node.js</span>
+                            </div>
+                        </div>
+                        <div class="timeline-point"></div>
+                    </div>
+                    
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div class="company-logo">
+                                    <img src="images/company-b-logo.svg" alt="Company B" onerror="this.src='images/placeholder.svg'">
+                                </div>
+                                <div class="company-info">
+                                    <h3 class="role">Frontend Developer</h3>
+                                    <h4 class="company">Company B</h4>
+                                    <div class="timeline-meta">
+                                        <span><i class="fa-regular fa-calendar"></i> 2022 - Present</span>
+                                        <span><i class="fa-solid fa-location-dot"></i> San Francisco, CA</span>
+                                        <span><i class="fa-solid fa-building"></i> Full-time</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills-container">
+                                <span class="skill-tag">React</span>
+                                <span class="skill-tag">Next.js</span>
+                                <span class="skill-tag">Tailwind CSS</span>
+                            </div>
+                        </div>
+                        <div class="timeline-point"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="skills-section">
+                <h3 class="subsection-title">
+                    <span class="gradient-text">Code Arsenal</span>
+                    <span class="emoji">⚔️</span>
+                </h3>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4 class="category-title">Programming Languages</h4>
+                        <div class="skill-bars">
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span>JavaScript</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-progress-bar" data-width="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span>TypeScript</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-progress-bar" data-width="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span>Solidity</span>
+                                    <span>70%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-progress-bar" data-width="70"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span>Go</span>
+                                    <span>60%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-progress-bar" data-width="60"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span>Rust</span>
+                                    <span>50%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-progress-bar" data-width="50"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h4 class="category-title">Frameworks/Libraries</h4>
+                        <div class="skill-bars">
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span>React</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-progress-bar" data-width="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span>Next.js</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-progress-bar" data-width="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span>Node.js</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-progress-bar" data-width="75"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span>Express.js</span>
+                                    <span>65%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-progress-bar" data-width="65"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h4 class="category-title">Tools</h4>
+                        <div class="skill-bars">
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span>Git</span>
+                                    <span>98%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-progress-bar" data-width="98"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span>Docker</span>
+                                    <span>88%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-progress-bar" data-width="88"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span>Kubernetes</span>
+                                    <span>78%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-progress-bar" data-width="78"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="gradient-text">My Expertise</span>
+                <span class="emoji">🛠️</span>
+            </h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cubes"></i>
+                    </div>
+                    <h3 class="service-title">Blockchain Development</h3>
+                    <p class="service-description">
+                        Custom blockchain solutions, smart contracts, and decentralized applications with a focus on security and efficiency.
+                    </p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3 class="service-title">ZK & FHE Implementation</h3>
+                    <p class="service-description">
+                        Zero-knowledge proofs and fully homomorphic encryption solutions for privacy-preserving applications.
+                    </p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="service-title">Full Stack Development</h3>
+                    <p class="service-description">
+                        End-to-end web application development with modern frameworks and best practices.
+                    </p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-file-code"></i>
+                    </div>
+                    <h3 class="service-title">Smart Contract Auditing</h3>
+                    <p class="service-description">
+                        Comprehensive security audits for smart contracts to identify vulnerabilities and ensure robust implementation.
+                    </p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3 class="service-title">Web3 Integration</h3>
+                    <p class="service-description">
+                        Seamless integration of Web3 technologies into existing applications and platforms.
+                    </p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-comment-dots"></i>
+                    </div>
+                    <h3 class="service-title">Technical Consultation</h3>
+                    <p class="service-description">
+                        Expert advice on blockchain architecture, technology stack selection, and implementation strategies.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="work-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="gradient-text">What I've Built</span>
+                <span class="emoji">🏗️</span>
+            </h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3 class="project-title">Serverless Web3 Blog</h3>
+                    <p class="project-description">
+                        Decentralized blogging platform with permanent storage on Arweave and crypto micropayments.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">Next.js</span>
+                        <span class="project-tag">Firebase</span>
+                        <span class="project-tag">Arweave</span>
+                        <span class="project-tag">Web3</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <h3 class="project-title">Cross-Chain Bridge</h3>
+                    <p class="project-description">
+                        Secure bridge for asset transfers between different blockchain networks.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">Cross-Chain</span>
+                        <span class="project-tag">Interoperability</span>
+                        <span class="project-tag">DeFi</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <h3 class="project-title">Decentralized Identity Solution</h3>
+                    <p class="project-description">
+                        Self-sovereign identity solution using blockchain technology.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">DID</span>
+                        <span class="project-tag">Identity</span>
+                        <span class="project-tag">Blockchain</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <h3 class="project-title">Solidity Code Generator</h3>
+                    <p class="project-description">
+                        Tool for rapid development and testing of secure smart contracts.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">Solidity</span>
+                        <span class="project-tag">Smart Contracts</span>
+                        <span class="project-tag">Development</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="gradient-text">Ping Me</span>
+                <span class="emoji">🚀</span>
+            </h2>
+            <div class="contact-container">
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                </form>
+                <div class="contact-alternatives">
+                    <p>Prefer to schedule a meeting?</p>
+                    <div class="contact-buttons">
+                        <a href="https://calendly.com/aakash4dev/quickchat" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                            <i class="fa-regular fa-calendar"></i> Schedule a Meeting
+                        </a>
+                        <a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:a50b3948-813a-4054-908c-4e2527f03d6d" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                            <i class="fa-regular fa-file-lines"></i> View CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/JohnPaulWeb?tab=repositories" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/johnpaul-braganza-683ab932a/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://x.com/YudoIssei5846" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://discord.gg/3HKkpbed" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Discord">
+                    <i class="fab fa-discord"></i>
+                </a>
+                <a href="https://johnpaulweb.pages.dev/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Medium">
+                    <i class="fab fa-medium"></i>
+                </a>
+                <a href="#" class="social-link disabled" aria-label="Mobile Apps">
+                    <i class="fas fa-mobile-alt"></i>
+                </a>
+            </div>
+            <div class="footer-info">
+                <p>© <span id="current-year"></span> Ayanokoji kiyotaka. All rights reserved.</p>
+                <a href="mailto:ayanokoji@gmail.com" class="email-link">ayanokoji@gmail.com</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="Finals.js"></script>
+</body>
+</html>
