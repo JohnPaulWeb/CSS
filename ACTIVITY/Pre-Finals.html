@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .buttons {
+            margin: 0;
+             position: absolute;
+             top: 50%;
+              left: 50%;
+             -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="buttons">
+            <button onclick="Greeting()">1. Functions, Variables, Input/Output</button>
+            <button onclick="Age()">2. Conditionals</button>
+            <button onclick="FavoriteFruits()">3. Arrays and for loop</button>
+         </div>
+    </div>
+
+
+
+    <script>
+        function Greeting() {
+            let name = prompt("Enter your name:");
+            if (name) {
+                alert("Hello, " + name + "! Nice to meet you");
+            } else {
+                alert("No name entered.");
+            }
+           
+        }
+
+
+        function Age() {
+            let age = prompt("How old are u:");
+            age = parseInt(age);
+
+            if (!isNaN(age)) {
+                if (age < 13) {
+                    alert("You are a minor.");
+                } else if (age < 20) {
+                    alert("You are an adult.");
+                } else {
+                    alert("You are a senior citizen.");
+                }
+            } else {
+                alert("Invalid input. Please enter a number.");
+            }
+        }
+
+        function FavoriteFruits() {
+            let fruits = ["Apple", "Banana", "Mango", "Grapes"];
+            let list = "Some of my favorite fruits:\n";
+            for (let i = 0; i < fruits.length; i++) {
+                list += (i + 1) + ". " + fruits[i] + "\n";
+            }
+            alert(list);
+        }
+
+    </script>
+</body>
+</html>
